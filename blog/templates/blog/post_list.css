@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Simplifica;
+    src: url(SIMPLIFICA Typeface.ttf);
+.header{
+  font-size:50px;
+  font-family:Simplifica, courier;
+  color:black;
+  background-color:#F0F0F0;
+  width:960px;
+  margin:0px auto;
+  width:100%;
+  position:fixed;
+  top:0px;
+  text-align:center;
+  z-index:3;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+.blog_post{
+  padding:30px;
+  background-color:#EEDFE4;
+  color:white;
+  font-family: Simplifica, courier;
+}
+.publish{
+  font-size:5px;
+}
+.blog_head{
+  font-size:30px;
+}
+.blog_content{
+  font-size:10px;
+}
