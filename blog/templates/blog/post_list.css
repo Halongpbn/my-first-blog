@@ -2,7 +2,9 @@
     font-family: Simplifica;
     src: url(SIMPLIFICA Typeface.ttf);
   }
-  
+body{
+  background-color:#D77874;
+}
 .header{
   font-size:50px;
   font-family:Simplifica, courier;
