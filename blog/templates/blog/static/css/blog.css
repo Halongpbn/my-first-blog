@@ -1,13 +1,8 @@
-@font-face {
-    font-family: Simplifica;
-    src: url(SIMPLIFICA Typeface.ttf);
-  }
 body{
   background-color:#D77874;
 }
 .header{
   font-size:50px;
-  font-family:Simplifica, courier;
   color:black;
   background-color:#F0F0F0;
   width:960px;
@@ -30,8 +25,6 @@ a{
   display:block;
   padding:30px;
   background-color:#EEDFE4;
-  color:white;
-  font-family: Simplifica, courier;
 }
 .publish{
   font-size:15px;
