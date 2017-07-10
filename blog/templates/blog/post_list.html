@@ -26,6 +26,7 @@ a{
   color:white;
 }
 .blog_post{
+  text-align:center;
   margin:40px;
   padding:30px;
   width:80%;
@@ -53,7 +54,7 @@ a{
             <a href="http://halongpbn.pythonanywhere.com/">Welcome!</a>
         </div>
 
-        <div class="blog_post">
+        <div class="blog_post" style="margin-top:60px">
           <div class="publish">
             <p>published: 14.06.2014, 12:14</p>
           </div>
@@ -65,7 +66,7 @@ a{
         </div>
       </div>
 
-        <div class="blog_post">
+      <div class="blog_post">
           <div class="publish">
             <p>published: 14.06.2014, 12:14</p>
           </div>
@@ -76,5 +77,9 @@ a{
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
       </div>
+      <div>
+        {% for post in posts %}
+            {{ post }}
+        {% endfor %}
     </body>
 </html>
