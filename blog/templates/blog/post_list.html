@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<!--<html>
+{% load staticfiles %}
     <head>
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <title>Welcome Page</title>
     </head>
     <body>
@@ -18,15 +20,26 @@
       <p>{{ post.text|linebreaksbr }}</p>
   </div>
 {% endfor %}
-          <!--<div class="publish">
-          <p>published: {{ post.published_date }}</p>
-          </div>
-          div class="blog_head">
-            <h1><a href="">{{ post.title }}</a></h1>
-          </div>
-          <div class="blog_content">
-               <p>{{ post.text|linebreaksbr }}</p>
-        </div>-->
-      </div>
+        </div>
+      </div>-->
+        <html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
