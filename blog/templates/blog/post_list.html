@@ -53,33 +53,18 @@ a{
         <div class = "header">
             <a href="http://halongpbn.pythonanywhere.com/">Welcome!</a>
         </div>
-
-        <div class="blog_post" style="margin-top:60px">
+  <div class="blog_post" style="margin-top:60px">
+      {% for post in posts %}
           <div class="publish">
-            <p>published: 14.06.2014, 12:14</p>
+            <p>published: {{ post.published_date }}</p>
           </div>
           <div class="blog_head">
-            <h2><a href="">OMG Pivotal is so cool lol</a></h2>
+            <h1><a href="">{{ post.title }}</a></h1>
           </div>
           <div class="blog_content">
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+               <p>{{ post.text|linebreaksbr }}</p>
         </div>
-      </div>
-
-      <div class="blog_post">
-          <div class="publish">
-            <p>published: 14.06.2014, 12:14</p>
-          </div>
-          <div class="blog_head">
-            <h2><a href="">Learning to Code!</a></h2>
-          </div>
-          <div class="blog_content">
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-      </div>
-      <div>
-        {% for post in posts %}
-            {{ post }}
         {% endfor %}
+      </div>
     </body>
 </html>
