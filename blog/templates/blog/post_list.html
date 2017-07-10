@@ -12,14 +12,14 @@
             <a href="http://halongpbn.pythonanywhere.com/">Welcome!</a>
         </div>
 
-  <div class="blog_post" style="margin-top:60px">
-    {% for post in posts %}
   <div>
+    {% for post in posts %}
+  <div  class="blog_post" style="margin-top:100px">
       <p>published: {{ post.published_date }}</p>
       <h1><a href="">{{ post.title }}</a></h1>
       <p>{{ post.text|linebreaksbr }}</p>
   </div>
-{% endfor %}
+  {% endfor %}
     </div>
   </div>
-  </html>
+</html>
