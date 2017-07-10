@@ -55,9 +55,13 @@ a{
         </div>
 
   <div class="blog_post" style="margin-top:60px">
-      {% for post in Posts %}
-          {{ post }}
-      {% endfor %}
+    {% for post in posts %}
+  <div>
+      <p>published: {{ post.published_date }}</p>
+      <h1><a href="">{{ post.title }}</a></h1>
+      <p>{{ post.text|linebreaksbr }}</p>
+  </div>
+{% endfor %}
           <!--<div class="publish">
           <p>published: {{ post.published_date }}</p>
           </div>
