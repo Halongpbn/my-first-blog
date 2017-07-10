@@ -53,19 +53,21 @@ a{
         <div class = "header">
             <a href="http://halongpbn.pythonanywhere.com/">Welcome!</a>
         </div>
-        {{ posts }}
+
   <div class="blog_post" style="margin-top:60px">
       {% for post in posts %}
-          <div class="publish">
-            <p>published: {{ post.published_date }}</p>
+          {{ post }}
+      {% endfor %}
+          <!--<div class="publish">
+          <p>published: {{ post.published_date }}</p>
           </div>
-          <div class="blog_head">
+          div class="blog_head">
             <h1><a href="">{{ post.title }}</a></h1>
           </div>
           <div class="blog_content">
                <p>{{ post.text|linebreaksbr }}</p>
         </div>
-        {% endfor %}
+        {% endfor %}-->
       </div>
     </body>
 </html>
